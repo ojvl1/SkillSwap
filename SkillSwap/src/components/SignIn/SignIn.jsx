@@ -1,5 +1,4 @@
 import React from "react";
-import LogIn from "../LogIn/LogIn";
 import SkillSwapLogo from "../../assets/SkillSwap-Logo.png"
 
 function SignIn() {
@@ -18,10 +17,10 @@ function SignIn() {
             <input type="email" name="email" />
             <label htmlFor="password">Enter a password</label>
             <input type="password" name="password" />
-            <label htmlFor="confirm password">Confirm password\</label>
+            <label htmlFor="confirm password">Confirm password</label>
             <input type="password" name="confirm password" />
             <button>Enter</button>
-            <p>Have an account? <a href={LogIn}>LogIn</a></p>
+            <p>Have an account? <a href="./components/LogIn/LogIn.jsx">LogIn</a></p>
           </div>
         </div>
       </div>
