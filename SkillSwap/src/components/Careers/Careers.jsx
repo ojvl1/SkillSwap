@@ -1,6 +1,6 @@
 import React from "react";
 import rightArrow from "../../assets/Right Arrow Icon.svg"
-import Logo from "../../../public/SkillSwap-icon.png"
+import Logo from "../../assets/SkillSwap-icon.png"
 import downArrow from "../../assets/Arrow Down Icon.svg"
 import "./Careers.css"
 
@@ -12,7 +12,11 @@ function Careers() {
     "Language",
     "Agriculture",
     "Computer Repair",
-    "Handy Man"
+    "Handy Man",
+    "Instruments",
+    "Sing",
+    "Cars Mechanic",
+    "Electronics"
   ];
 
   return(
