@@ -1,5 +1,11 @@
-.find-careers-box div {
+li {
+  
+  list-style: none;
+}
+.find-careers-box {
+  padding-top: 0;
+  margin-left: 0;
   background-color: #1189B3;
-  height: "100px";
-  width: "50px";
+  width: 300px;
+  height: 1000px;
 }

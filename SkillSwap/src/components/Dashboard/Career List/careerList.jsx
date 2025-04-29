@@ -1,7 +1,6 @@
 import React from "react";
-import "./Dashboard.css"
 
-function Dashboard() {
+function careeList() {
   const career_list = [
     "Programmer",
     "Sign Laguage",
@@ -14,16 +13,6 @@ function Dashboard() {
     "Cars Mechanic",
     "Electronics"
   ];
-
-  return(
-    <>
-      <div className="find-careers-box">
-        <ul>
-          <li>{career_list}</li>
-        </ul>
-      </div>
-    </>
-  );
 }
 
-export default Dashboard;
+export default careeList;
