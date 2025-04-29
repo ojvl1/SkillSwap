@@ -13,6 +13,10 @@ function careeList() {
     "Cars Mechanic",
     "Electronics"
   ];
+
+  return(
+    
+  );
 }
 
 export default careeList;
