@@ -1,5 +1,5 @@
 import React from "react";
-import "./CareerList.css";
+import "./CareerList.css"
 
 function CareerList() {
   const list = [
