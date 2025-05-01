@@ -1,0 +1,12 @@
+/* Start Settings */
+.settings {
+  display: flex;
+  
+}
+
+/* Start Notification */
+.notifications-box {
+  background-color: #1189B3;
+  width: 500px;
+  height: 500px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
-import "./CareerList.css"
+import avatar from "../../../assets/avatar.png"
+import "./CareerList.css";
 
 function CareerList() {
   const list = [
@@ -17,12 +18,22 @@ function CareerList() {
 
   return(
     <>
-      <div>
-        <ul>
-          {list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+      <div className="box">
+        <div className="profile">
+          <div className="avatar">
+            <img height="100" width="100" src={avatar} alt="" /> 
+          </div>
+          <div>
+            <p>Profile</p>
+          </div>
+        </div>
+        <div className="list">
+          <ul>
+            {list.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );
