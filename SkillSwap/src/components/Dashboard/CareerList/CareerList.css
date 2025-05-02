@@ -30,6 +30,13 @@ li {
   font-size: 30px;
 }
 
+svg {
+  display: flex;
+  justify-content: inline;
+  width: 35px;
+  height: 35px;
+}
+
 .box {
   background-color: #1189B3;
   width: 300px;

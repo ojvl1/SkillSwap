@@ -1,5 +1,5 @@
 import React from "react";
-import CareerList from "./CareerList/CareerList";
+import CareerList from "./CareerList/CareerList.jsx";
 import setting from "../../assets/Settings Gear Icon.png"
 import "./Dashboard.css"
 

@@ -4,6 +4,11 @@
   
 }
 
+.setting-img {
+  height: 30px;
+  width: 30px;
+}
+
 /* Start Notification */
 .notifications-box {
   background-color: #1189B3;
