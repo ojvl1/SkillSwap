@@ -1,0 +1,41 @@
+.Logo img{
+  width: 180px;
+  height: 150px;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  font-size: 30px;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.list button {
+  font-size: 40px; 
+}
+
+.list img {
+  width: 30px;
+  height: 30px;
+}
+
+.button button {
+  font-size: 40px;
+}
+
+.button img {
+  width: 30px;
+  height: 30px;
+} 
+
