@@ -21,7 +21,7 @@ function CareerList() {
     <div className="box">
       <div className="profile">
         <div className="avatar">
-          <img height="50" width="50" src={avatar} alt="avatar" /> 
+          <img height="80" width="80" src={avatar} alt="avatar" /> 
         </div>
         <div className="profile-p">
           <p>Profile</p>

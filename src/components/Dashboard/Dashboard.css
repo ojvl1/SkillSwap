@@ -1,6 +1,14 @@
 .settings {
+  position: absolute;
+  top: 20px;         /* adjust as needed */
+  right: 20px;       /* adjust as needed */
   display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+p {
+  font-size: 40px;
 }
 
 /* Start Notification */
@@ -8,4 +16,8 @@
   background-color: #1189B3;
   width: 500px;
   height: 500px;
+}
+
+h1 {
+  color: white;
 }

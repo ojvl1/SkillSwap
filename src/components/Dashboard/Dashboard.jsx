@@ -13,10 +13,10 @@ function Dashboard() {
       {/* Start Settings */}
       <div className="settings">
         <div setting-p>
-          <p>Settings</p>
+          <p >Settings</p>
         </div>
         <div setting-img>
-          <img src={setting} alt="setting logo" />
+          <img height="50" width="50" src={setting} alt="setting logo" />
         </div>
       </div>
       {/* Finish Settings */}
