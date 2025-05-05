@@ -2,7 +2,7 @@ import React from "react";
 import rightArrow from "../../assets/Right Arrow Icon.svg"
 import Logo from "../../assets/SkillSwap-icon.png"
 import downArrow from "../../assets/Arrow Down Icon.svg"
-import "./Careers.css"
+import "./Careers.css";
 
 function Careers() {
 
@@ -42,4 +42,4 @@ function Careers() {
   );
 }
 
-export default Careers
+export default Careers;

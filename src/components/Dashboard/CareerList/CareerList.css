@@ -1,0 +1,45 @@
+/* Start Career Side */
+.profile {
+  display: flex;
+  justify-content: block;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.profile-p {
+  padding-top: 13px;
+  padding-left: 30px;
+}
+
+.avatar {
+  padding-top: 30px;
+  padding-left: 35px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.box {
+  background-color: #1189B3;
+  width: 300px;
+  height: 780px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Finish Career Side */
