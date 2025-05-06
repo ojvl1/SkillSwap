@@ -1,7 +1,7 @@
 .settings {
   position: absolute;
-  top: 20px;         /* adjust as needed */
-  right: 20px;       /* adjust as needed */
+  top: 5px;
+  right: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -14,10 +14,16 @@ p {
 /* Start Notification */
 .notifications-box {
   background-color: #1189B3;
-  width: 500px;
-  height: 500px;
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  display: flex;
+  gap: 10px;
 }
 
 h1 {
   color: white;
+  padding-right: 20px;
 }
