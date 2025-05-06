@@ -26,12 +26,10 @@ function Dashboard() {
         <div>
           <h1>Notifications</h1>
         </div>
-        <div>
-          <div>
-
-          </div>
-          <div></div>
-          <div></div>
+        <div className="boxes">
+          <div className="box-1"></div>
+          <div className="box-2"></div>
+          <div className="box-3"></div>
         </div>
       </main>
       {/* Notification Finish */}

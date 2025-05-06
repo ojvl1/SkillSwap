@@ -13,7 +13,8 @@ function CareerList() {
     "Instruments",
     "Sing",
     "Cars Mechanic",
-    "Electronics"
+    "Electronics",
+    "Agriculture",
   ];
 
   return(
