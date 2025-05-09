@@ -1,18 +1,29 @@
 import React from "react";
-import DragDrop from "./Drag and Dro/dragAndDrop.jsx"
-import Icon from "../../assets/SkillSwap-icon.png"
+import DragDrop from "./DragAndDrop/dragAndDrop";
+import Logo from "../../assets/SkillSwap-Logo.png"
 import "./Background.css"
 
 function Background() {
   return(
     <>
     <div className="Icon">
-      <img src={Icon} alt="Skill Swap Icon" />
+      <img src={Logo} alt="Skill Swap Icon" />
     </div>
-      <h1>Your Background</h1>
-      <input placeholder="Name" type="text" />
-      <input placeholder="Lastname" type="text" />
-      <DragDrop />
+    <div className="main">
+      <div className="title">
+        <h1>Your Background</h1>
+      </div>
+      <div className="info">
+        <div className="inputs">
+          <input placeholder="Name" type="text" />
+          <input placeholder="Last Name" type="text" />
+          <input placeholder="Age" type="number" name="Age" />
+        </div>
+        <div className="dragdrop">
+          <DragDrop />
+        </div>
+      </div>
+    </div>
     </>
   )
 }
