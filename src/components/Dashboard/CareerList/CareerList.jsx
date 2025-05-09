@@ -15,6 +15,7 @@ function CareerList() {
     "Cars Mechanic",
     "Electronics",
     "Agriculture",
+    "Mathematics"
   ];
 
   return(

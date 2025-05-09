@@ -24,16 +24,16 @@
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 10px; /* Scrollbar Thickness */
+/* ::-webkit-scrollbar {
+  width: 10px;  Scrollbar Thickness 
   height: 15px;
 }
 ::-webkit-scrollbar-thumb {
   background: #22514A;
 }
 ::-webkit-scrollbar-track {
-  background: #ffffff; /* Background Color */
-}
+  background: #ffffff; Background Color 
+}  */
 
 li {
   display: flex;

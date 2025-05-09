@@ -23,13 +23,13 @@ function Dashboard() {
       {/* ---------------------------------------------------- */}
       {/* Start Notification */}
       <main className="notifications-box">
-        <div>
+        <div className="noti-h1">
           <h1>Notifications</h1>
         </div>
         <div className="boxes">
-          <div className="box-1"></div>
-          <div className="box-2"></div>
-          <div className="box-3"></div>
+          <div className="box-1">1</div>
+          <div className="box-2">2</div>
+          <div className="box-3">3</div>
         </div>
       </main>
       {/* Notification Finish */}
