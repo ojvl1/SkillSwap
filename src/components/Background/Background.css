@@ -6,9 +6,23 @@ img {
 .main {
   display: flex;
   justify-content: center;
+}
+
+.title {
+  color: black;
+}
+
+.info {
+  display: flex;
   align-content: column;
 }
 
-h1 {
-  color: black;
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0;
+  padding-right: 60px;
+  width: 400px;
+  height: 40px;
 }

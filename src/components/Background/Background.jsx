@@ -20,9 +20,7 @@ function Background() {
       <img src={Logo} alt="Skill Swap Icon" />
     </div>
     <div className="main">
-      <div className="title">
-        <h1>Your Background</h1>
-      </div>
+      <h1>Your Background</h1>
       <div className="info">
         <div className="inputs">
           <input placeholder="Name" type="text" />
@@ -34,6 +32,7 @@ function Background() {
         </div>
         <button ref={buttonRef} onClick={handleClick} >Next</button>
       </div>
+      <button>Next</button>
     </div>
     </>
   )
