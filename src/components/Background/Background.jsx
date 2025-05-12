@@ -1,19 +1,10 @@
-import React, { useRef, useEffect } from "react";
-import DragDrop from "./DragAndDrop/dragAndDrop";
+import React from "react";
+import { Link } from "react-router-dom"
 import Logo from "../../assets/SkillSwap-Logo.png"
+import Dashboard from "../Dashboard/Dashboard.jsx"
 import "./Background.css"
 
 function Background() {
-  const buttonRef = useRef(null);
-
-  useEffect(() => {
-    buttonRef.current.focus();
-  }, []);
-
-  const handleClick = () => {
-    console.log('Button clicked!', buttonRef.current);
-  };
-
   return(
     <>
     <div className="Icon">
@@ -30,9 +21,8 @@ function Background() {
         <div className="dragdrop">
           <DragDrop />
         </div>
-        <button ref={buttonRef} onClick={handleClick} >Next</button>
+          <Link to={Dashboard}>Next</Link>
       </div>
-      <button>Next</button>
     </div>
     </>
   )
