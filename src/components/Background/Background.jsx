@@ -29,7 +29,7 @@ function Background() {
           cancelOptions={{ label: 'Cancel', icon: 'pi pi-times', className: 'custom-cancel-btn' }}
           headerTemplate={() => (
           <div className="custom-header">
-            <p className="m-0">Drag and drop files to here to upload.</p>
+            <p className="m-0">Drag and drop files to here to upload +</p>
           <div className="custom-buttons">
             <span className="p-button p-fileupload-choose custom-choose-btn">Choose</span>
             <span className="p-button p-fileupload-upload custom-upload-btn">Upload</span>
