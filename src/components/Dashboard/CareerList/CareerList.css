@@ -1,59 +1,50 @@
-/* Start Career Side */
-.profile {
-  display: flex;
-  justify-content: block;
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.profile-p {
-  padding-top: 13px;
-  padding-left: 30px;
-}
-
-.avatar {
-  padding-top: 25px;
-  padding-left: 35px;
-}
-
-.list {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-/* ::-webkit-scrollbar {
-  width: 10px;  Scrollbar Thickness 
-  height: 15px;
-}
-::-webkit-scrollbar-thumb {
-  background: #22514A;
-}
-::-webkit-scrollbar-track {
-  background: #ffffff; Background Color 
-}  */
-
-li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  list-style: none;
-  color: white;
-  padding: 15px 30px;
-}
-
 .box {
   background-color: #1189B3;
   width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.avatar {
+  margin-right: 20px;
+}
+
+.profile-p {
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+.list {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+li {
+  list-style: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul {
   margin: 0;
   padding: 0;
 }
-/* Finish Career Side */

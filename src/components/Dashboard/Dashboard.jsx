@@ -12,11 +12,10 @@ function Dashboard() {
       {/* ---------------------------------------------------- */}
       {/* Start Settings */}
       <div className="settings">
-        <div setting-p>
-          <p >Settings</p>
-        </div>
-        <div setting-img>
-          <img height="50" width="50" src={setting} alt="setting logo" />
+        <div className="setting-text">
+          <button className="settings-btn" aria-label="Settings">
+            <img height="30" width="30" src={setting} alt="Settings icon" />
+          </button>
         </div>
       </div>
       {/* Finish Settings */}

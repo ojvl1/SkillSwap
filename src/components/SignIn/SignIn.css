@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .signin-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #236896;
 }
 
@@ -30,7 +36,7 @@
 }
 
 h1 {
-  font-size:3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #333;
 }
@@ -53,8 +59,8 @@ input {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
-  height: 50px;
-  width: 440px;
+  height: 100px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -67,12 +73,12 @@ input {
   cursor: pointer;
   font-size: 1rem;
   margin-top: 0.5rem;
-  width: 440px;
+  width: 100%;
   height: 50px;
 }
 
 .signin-button:hover {
-  background-color: #236896;
+  background-color: #1e6a98;
 }
 
 .login-link {
@@ -81,7 +87,7 @@ input {
 }
 
 .login-link p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 

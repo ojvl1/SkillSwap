@@ -11,7 +11,7 @@ function LogIn() {
             <img src={SkillSwapLogo} alt="SkillSwap Logo" />
           </div>
           <div>
-            <h1>Log In</h1>
+            <h1 className="title">Log In</h1>
           </div>
           <div className="form-inputs">
             <label htmlFor="email">Enter your email</label>
