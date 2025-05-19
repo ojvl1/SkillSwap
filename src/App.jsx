@@ -1,6 +1,5 @@
 import React from "react";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { Routes, Route } from "react-router-dom";
 import SignIn from "./components/SignIn/SignIn.jsx";
 import LogIn from "./components/LogIn/LogIn.jsx";
 import Careers from "./components/Careers/Careers.jsx";
@@ -11,15 +10,15 @@ import "./App.css";
 function App() {
   return(
     <>
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/background" element={<Background />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </>
   )
 }
 
 export default App;
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)

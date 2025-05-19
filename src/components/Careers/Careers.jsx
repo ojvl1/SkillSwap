@@ -9,6 +9,11 @@ function Careers() {
 
   const careers = [
     "Programmer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Fullstack Developer",
+    "Data Analyst",
+    "UI/UX Designer",
     "Sign Language",
     "Language",
     "Agriculture",

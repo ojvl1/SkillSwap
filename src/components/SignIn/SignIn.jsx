@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import SkillSwapLogo from "../../assets/SkillSwap-Logo.png";
-import LogIn from "../LogIn/LogIn";
+import { registerUser } from "../../utils/auth";
 import "./SignIn.css";
 
 function SignIn() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = e => {
+    e.preventDefaultd();
+
+    if (!email || !password || !confirm) {
+      return setError("All fields are required");
+    }
+
+    if (password !== confirm) {
+      return setError("Passwords do not match");
+    }
+
+    const result = registerUser(email, password);
+
+    if (!result.success) {
+      return setError(result.message);
+    }
+
+    navigate("/careers");
+  };
+
   return (
     <>
       <div className="signin-container">
@@ -11,21 +38,20 @@ function SignIn() {
           <div className="logo-container">
             <img src={SkillSwapLogo} alt="SkillSwap Logo" />
           </div>
-          <div>
             <h1>Create an Account</h1>
-          </div>
-          <div className="form-inputs">
-            <label htmlFor="email">Enter a email</label>
-            <input type="email" name="email" className="email" />
-            <label htmlFor="password">Enter a password</label>
-            <input type="password" name="password" className="password" />
-            <label htmlFor="confirmPassword">Confirm password</label>
-            <input type="password" name="confirmPassword" className="password" />
-            <button className="signin-button">Sign In</button>
+            {error && <p style={{ color: "red" }}>{error}</p>}
+            <form onSubmit={handleSubmit} className="form-inputs">
+              <label>Email</label>
+              <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
+              <label>Password</label>
+              <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+              <label>Confirm Password</label>
+              <input type="password" value={confirm} onChange={e => setConfirm(e.target.value)} />
+              <button className="signin-button" type="submit">Sign In</button>
+            </form>
             <div className="login-link">
-              <p>Have an account? <a href={LogIn}>Log In</a></p>
+              <p>Have an account? <Link to="/login">Log In</Link></p>
             </div>
-          </div>
         </div>
       </div>
     </>
