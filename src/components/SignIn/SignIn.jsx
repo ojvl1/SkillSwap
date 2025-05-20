@@ -41,7 +41,7 @@ function SignIn() {
     users.push(newUser);
     saveUsers(users);
     saveCurrentUser(newUser);
-    navigate("/login");
+    navigate("/careers");
   };
 
   return (
