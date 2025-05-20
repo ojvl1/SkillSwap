@@ -5,6 +5,11 @@ import "./CareerList.css"
 function CareerList() {
   const list = [
     "Programming",
+    "Frontend Developer",
+    "Backend Developer",
+    "Fullstack Developer",
+    "Data Analyst",
+    "UI/UX Designer",
     "Sign Laguage",
     "Language",
     "Agriculture",

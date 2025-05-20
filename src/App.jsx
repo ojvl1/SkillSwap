@@ -5,6 +5,7 @@ import LogIn from "./components/LogIn/LogIn.jsx";
 import Careers from "./components/Careers/Careers.jsx";
 import Background from "./components/Background/Background.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import Settings from "./components/Settings/Settings.jsx";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/background" element={<Background />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </>
   )

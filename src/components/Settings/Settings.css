@@ -1,0 +1,22 @@
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-box button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: white;
+  color: #2c7db1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-box button:hover {
+  height: 60px;
+  width: 150px;
+  font-size: 1.5rem;
+}

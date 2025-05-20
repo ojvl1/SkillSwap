@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/SkillSwap-icon.png";
 import downArrow from "../../assets/Arrow Down Icon.svg";
 import "./Careers.css";
@@ -6,9 +7,11 @@ import "./Careers.css";
 function Careers() {
   const [isListVisible, setIsListVisible] = useState(false);
   const [selectedCareer, setSelectedCareer] = useState("");
+  
+  const navigate = useNavigate();
 
   const careers = [
-    "Programmer",
+    "Programming",
     "Frontend Developer",
     "Backend Developer",
     "Fullstack Developer",
@@ -73,7 +76,7 @@ function Careers() {
       </div>
       
       <div className="next-button-container">
-        <button className="next-button">
+        <button className="next-button" onClick={() => navigate("/background")}>
           Next
         </button>
       </div>

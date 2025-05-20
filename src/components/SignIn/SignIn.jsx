@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import SkillSwapLogo from "../../assets/SkillSwap-Logo.png";
-import { registerUser } from "../../utils/auth";
+import Icon from "../../assets/SkillSwap-icon.png"
+import { getUsers, saveUsers, saveCurrentUser } from "../../utils/auth";
 import "./SignIn.css";
 
 function SignIn() {
@@ -12,7 +12,7 @@ function SignIn() {
   const navigate = useNavigate();
 
   const handleSubmit = e => {
-    e.preventDefaultd();
+    e.preventDefault();
 
     if (!email || !password || !confirm) {
       return setError("All fields are required");
@@ -22,13 +22,26 @@ function SignIn() {
       return setError("Passwords do not match");
     }
 
-    const result = registerUser(email, password);
+    const users = getUsers();
 
-    if (!result.success) {
-      return setError(result.message);
+    const userExists = users.find(u => u.email === email);
+    if (userExists) {
+      return setError("Email is already registered");
     }
 
-    navigate("/careers");
+    const newUser = {
+      email,
+      password,
+      career: "",
+      firstName: "",
+      lastName: "",
+      resume: ""
+    };
+
+    users.push(newUser);
+    saveUsers(users);
+    saveCurrentUser(newUser);
+    navigate("/login");
   };
 
   return (
@@ -36,7 +49,7 @@ function SignIn() {
       <div className="signin-container">
         <div className="signin-form">
           <div className="logo-container">
-            <img src={SkillSwapLogo} alt="SkillSwap Logo" />
+            <img src={Icon} alt="SkillSwap Logo" />
           </div>
             <h1>Create an Account</h1>
             {error && <p style={{ color: "red" }}>{error}</p>}

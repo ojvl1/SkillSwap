@@ -1,10 +1,18 @@
 export function getUsers() {
-  const users = localStorage.getItem("users");
-  return users ? JSON.parse(users) : [];
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  return users;
 }
 
 export function saveUsers(users) {
   localStorage.setItem("users", JSON.stringify(users));
+}
+
+export function saveCurrentUser(user) {
+  localStorage.setItem("currentUser", JSON.stringify(user));
+}
+
+export function getCurrentUser() {
+  return JSON.parse(localStorage.getItem("currentUser"));
 }
 
 export function registerUser(email, password) {
@@ -46,4 +54,26 @@ export function updateUserCareer(career) {
     return user;
   });
   saveUsers(updateUsers);
+}
+
+export function updateUserBackground(firstName, lastName, age, resumeName) {
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  const updatedUsers = users.map(user => {
+    if (user.email === currentUser.email) {
+      const updatedUser = {
+        ...user,
+        firstName,
+        lastName,
+        age,
+        resumeName
+      };
+      localStorage.setItem("currentUser", JSON.stringify(updatedUser));
+      return updatedUser;
+    }
+    return user;
+  });
+
+  localStorage.setItem("users", JSON.stringify(updatedUsers));
 }
